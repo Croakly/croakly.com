@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Croakly - Leap into Learning</title>
+    
+    <!-- Tailwind CSS for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Custom Styles -->
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        /* Custom gradient class */
+        .bg-lime-gradient {
+            background: linear-gradient(135deg, #a7f3d0, #6ee7b7, #34d399);
+        }
+        .text-shadow-custom {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center space-x-2">
+                <!-- Croakly Logo -->
+                <img src="https://i.imgur.com/XBSv78o.png" alt="Croakly Logo" class="w-10 h-10" onerror="this.onerror=null;this.src='https://placehold.co/40x40/34d399/ffffff?text=C';">
+                <span class="text-2xl font-bold text-gray-800">Croakly</span>
+            </a>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#features" class="text-gray-600 hover:text-green-500 transition-colors">Features</a>
+                <a href="#apps" class="text-gray-600 hover:text-green-500 transition-colors">Our Apps</a>
+                <a href="#about" class="text-gray-600 hover:text-green-500 transition-colors">About Us</a>
+            </nav>
+            <a href="#contact" class="hidden md:block bg-green-500 text-white font-bold py-2 px-5 rounded-full hover:bg-green-600 transition-transform transform hover:scale-105">
+                Get in Touch
+            </a>
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-gray-700">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden px-6 pb-4">
+             <a href="#features" class="block py-2 text-gray-600 hover:text-green-500">Features</a>
+             <a href="#apps" class="block py-2 text-gray-600 hover:text-green-500">Our Apps</a>
+             <a href="#about" class="block py-2 text-gray-600 hover:text-green-500">About Us</a>
+             <a href="#contact" class="block mt-2 text-center bg-green-500 text-white font-bold py-2 px-5 rounded-full hover:bg-green-600">Get in Touch</a>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section class="bg-lime-gradient text-white relative overflow-hidden">
+            <div class="container mx-auto px-6 py-24 md:py-32 text-center">
+                <img src="https://i.imgur.com/XBSv78o.png" alt="Croakly Logo" class="w-32 h-32 mx-auto mb-6" onerror="this.onerror=null;this.src='https://placehold.co/128x128/ffffff/34d399?text=C';">
+                <h1 class="text-4xl md:text-6xl font-extrabold leading-tight mb-4 text-shadow-custom">Leap into Learning.</h1>
+                <p class="text-lg md:text-xl max-w-3xl mx-auto mb-8 opacity-90">
+                    Croakly builds fun, engaging, and beautifully designed educational apps that make learning an exciting experience for kids and adults everywhere.
+                </p>
+                <a href="#apps" class="bg-white text-green-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition-transform transform hover:scale-105 shadow-lg">
+                    Explore Our Apps
+                </a>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Why Adults & Kids Love Croakly</h2>
+                    <p class="text-gray-600 mt-2">We focus on what matters most.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                    <!-- Feature 1 -->
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="bg-green-100 text-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14.828 14.828a4 4 0 01-5.656 0M9 10h.01M15 10h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Genuinely Fun</h3>
+                        <p class="text-gray-600">Our games are so engaging, you'll forget you're even learning. We blend play with pedagogy seamlessly.</p>
+                    </div>
+                    <!-- Feature 2 -->
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="bg-green-100 text-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Safe & Secure</h3>
+                        <p class="text-gray-600">With a commitment to privacy, you can trust our apps to provide a safe digital environment.</p>
+                    </div>
+                    <!-- Feature 3 -->
+                    <div class="p-8 bg-gray-50 rounded-xl shadow-sm hover:shadow-lg transition-shadow">
+                        <div class="bg-green-100 text-green-600 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                            <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Curriculum-Aligned</h3>
+                        <p class="text-gray-600">Designed by educators, our content supports and reinforces healthy patterns of learning for both adults and children.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Apps Section -->
+        <section id="apps" class="py-20 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800">Our Educational Apps</h2>
+                    <p class="text-gray-600 mt-2">Learn with Croakly!</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <!-- App Card 1 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/a/ae/Flag_of_the_United_Kingdom.svg" alt="Flag of the United Kingdom" class="w-full h-48 object-cover border-b">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Croakly - Learn English</h3>
+                            <p class="text-gray-600 mb-4">Croakly has made learning into an extremely addicting game! You can play it now on your phone and learn English.</p>
+                            <a href="#" class="font-bold text-green-600 hover:text-green-700">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- App Card 2 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/bc/Flag_of_Finland.svg" alt="Flag of Finland" class="w-full h-48 object-cover border-b">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Croakly - Learn Finnish</h3>
+                            <p class="text-gray-600 mb-4">Croakly has made learning into an extremely addicting game! You can play it now on your phone and learn Finnish.</p>
+                            <a href="#" class="font-bold text-green-600 hover:text-green-700">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- App Card 3 -->
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:-translate-y-2 transition-transform duration-300">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/b/ba/Flag_of_Germany.svg" alt="Flag of Germany" class="w-full h-48 object-cover border-b">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold mb-2">Croakly - Learn German</h3>
+                            <p class="text-gray-600 mb-4">Croakly has made learning into an extremely addicting game! You can play it now on your phone and learn German.</p>
+                            <a href="#" class="font-bold text-green-600 hover:text-green-700">Learn More &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Us Section -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-6">
+                 <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Our Mission</h2>
+                        <p class="text-gray-600 mb-4 leading-relaxed">
+                            Croakly was founded by a team of educators, developers, and parents who believe that screen time can be positive, productive, and powerful. We were tired of seeing educational apps that were either boring or filled with distractions.
+                        </p>
+                        <p class="text-gray-600 leading-relaxed">
+                            Our mission is simple: to create high-quality educational experiences that learners of all ages are excited to use. We combine proven teaching methods with top-tier game design to spark curiosity and build confidence in learners. Every app we make is a labor of love, crafted to be a delightful part of a learner's journey.
+                        </p>
+                    </div>
+                    <div class="flex justify-center">
+                        <img src="https://placehold.co/500x500/e0f2f1/34d399?text=Team+Croakly" alt="Team Croakly" class="rounded-xl shadow-lg">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Croakly</h3>
+                    <p class="text-gray-400">Creating a brighter future, one app at a time.</p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Contact Us</h3>
+                    <p class="text-gray-400">Have a question or want to partner with us?</p>
+                    <a href="mailto:CroaklyApps@gmail.com" class="text-green-400 hover:text-green-300 transition-colors mt-2 inline-block">CroaklyApps@gmail.com</a>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Follow Us</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><span class="sr-only">Twitter</span><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><span class="sr-only">Facebook</span><svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path fill-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clip-rule="evenodd"></path></svg></a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-12 border-t border-gray-700 pt-8 text-center text-gray-500">
+                <p>&copy; 2025 Croakly. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple script for mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
+</body>
+</html>
